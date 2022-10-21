@@ -33,6 +33,9 @@ a:hover {
     font-size: 35px;
     font-weight: 700;
 }
+.bg-theme {
+    background-color: var(--color-theme);
+}
 
 ._navbar {
     display: flex;
@@ -78,6 +81,7 @@ a:hover {
             justify-content: center;
             align-items: center;
             box-shadow: 0 0 6px 4px var(--color-shadow );
+            position: relative;
         }
 
         ._navbar ._nav-icon-links a:hover {
@@ -87,7 +91,6 @@ a:hover {
         }
 
         
-
 /* när skärmen är lika eller större än 1600px den max-width ska gälla då, alltså 1680px  */
 @media (min-width: 1600px) {
     .container {
