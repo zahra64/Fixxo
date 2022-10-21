@@ -86,6 +86,7 @@ a:hover {
             text-decoration: none;
         }
 
+        
 
 /* när skärmen är lika eller större än 1600px den max-width ska gälla då, alltså 1680px  */
 @media (min-width: 1600px) {
