@@ -36,6 +36,40 @@ a:hover {
 .bg-theme {
     background-color: var(--color-theme);
 }
+._btn-theme {
+    position: relative;
+    text-align: center;
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    padding: 20px 50px;
+    transition: all 0.2s ease-in-out;
+}
+    ._btn-theme:hover {
+        color: var(--color-white);
+        background-color: var(--color-dark);
+        text-decoration: none;
+
+    }
+
+    ._btn-theme ._btn-theme-left,
+    ._btn-theme ._btn-theme-right {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+    }
+
+    ._btn-theme ._btn-theme-left {
+        top: 10px;
+        left: 10px;
+        border-left: 1px solid var(--color-white);
+        border-top: 1px solid var(--color-white);
+    }
+    ._btn-theme ._btn-theme-right {
+        bottom: 10px;
+        right: 10px;
+        border-right: 1px solid var(--color-white);
+        border-bottom: 1px solid var(--color-white);
+    }
 
 ._navbar {
     display: flex;
@@ -90,7 +124,49 @@ a:hover {
             text-decoration: none;
         }
 
-        
+._showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}      
+
+    ._showcase ._img-left {
+        margin-left: -120px;
+    }
+    ._showcase ._img-right {
+        margin-right: -120px;
+    }
+
+    ._showcase ._showcase-body {
+        text-align: center;
+    }
+        ._showcase ._showcase-body h1 {
+            font-size: 65px;
+            font-weight: 800;
+        }
+        ._showcase ._showcase-body p {
+            margin-top: 50px;
+            margin-bottom: 35px;
+            font-size: 20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* när skärmen är lika eller större än 1600px den max-width ska gälla då, alltså 1680px  */
 @media (min-width: 1600px) {
     .container {
