@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --color-white: #FFFFFF;
+    --color-theme: #FF7373;
+    --color-dark: #222529;
+    --color-shadow: rgba(0, 0, 0, 0.06);
+    --linear-gradient-dark: #E6E6E6;
+    --linear-gradient-light: #F5F5F5;
+
+    --max-width: 1680px;
+}
+boday {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    color: var(--color-theme);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-theme);
+    text-decoration: underline;
+}
+
+._gradient-gray {
+    background: var(--linear-gradient-dark);
+    background: linear-gradient(90deg, var(--linear-gradient-dark) 0%, var(--linear-gradient-light) 100%);
+}
+._logo {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+._navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    ._navbar ._navbar-links {
+        font-weight: 500;
+    } 
+        ._navbar ._nav-links a {
+            color: var(--color-dark);
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+            ._navbar ._nav-links a:hover {
+                color: var(--color-theme);
+                text-decoration: none;
+            }
+            ._navbar ._nav-links a:active,
+            ._navbar ._nav-links ._active {
+                color: var(--color-theme);
+                text-decoration: none;
+            } 
+
+    ._navbar ._nav-icon-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+        ._navbar ._nav-icon-links a {
+            background-color: var(--color-white);
+            color: var(--color-dark);
+            width: 36px;
+            height: 36px;
+            margin-left: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 6px 4px var(--color-shadow );
+        }
+
+        ._navbar ._nav-icon-links a:hover {
+            color: var(--color-dark);
+            color: var(--color-theme);
+            text-decoration: none;
+        }
+
+
+/* när skärmen är lika eller större än 1600px den max-width ska gälla då, alltså 1680px  */
+@media (min-width: 1600px) {
+    .container {
+        max-width: var(--max-width);
+    }
+}
