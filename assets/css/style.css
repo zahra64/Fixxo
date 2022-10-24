@@ -3,6 +3,7 @@
 :root {
     --color-white: #FFFFFF;
     --color-theme: #FF7373;
+    --color-extralightgray: #F8F8F8;
     --color-dark: #222529;
     --color-gray: #BBBBBB;
     --color-lightgray: #707066;
@@ -311,7 +312,7 @@ header {
 
 
 .contact-form {
-    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
     .contact-form .container {
@@ -379,6 +380,31 @@ header {
 
 
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color : var(--color-extralightgray);
+        padding: 25px;
+    }
+    
+    footer .socialmedia {
+     margin-bottom: 25px;
+    }
+    
+    footer .socialmedia a {
+        font-size: 20px;
+        color: var(--color-dark);
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    footer .socialmedia a:hover {
+        color: var(--color-theme);
+        text-decoration: none;
+    }
 
 
 
