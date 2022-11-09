@@ -1,19 +1,20 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import MenuIcon from '../components/MenuIcon'
 
 const MainMenuSection = () => {
   return (
-    <nav class="mainmenu container">
-        <div class="logo">
+    <nav className="mainmenu container">
+        <div className="logo">
             Fixxo.
         </div>
-        <div class="menu-links">
-            <a href="index.html">Home</a>
-            <a href="#">Categories</a>
-            <a href="#">Products</a>
-            <a href="contact.html">Contacs</a>
+        <div className="menu-links">
+            <NavLink className="menu-link" to="/" end>Home</NavLink>
+            <NavLink className="menu-link" to="/categories" end>Categories</NavLink>
+            <NavLink className="menu-link" to="/products" end>Products</NavLink>
+            <NavLink className="menu-link" to="/contacts" end>Contacs</NavLink>
         </div>
-        <div class="menu-icons">
+        <div className="menu-icons">
             <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
             <MenuIcon link="/compare" icon="fa-regular fa-repeat" />
             <MenuIcon link="/wishlist" icon="fa-regular fa-heart" />
