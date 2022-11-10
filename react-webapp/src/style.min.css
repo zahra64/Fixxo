@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+.bg-theme {
+  background-color: #FF7373;
+}
+
+.bg-dark {
+  background-color: #222529 !important;
+}
+
 html, body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -22,8 +30,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .mainmenu .logo {
   font-size: 35px;
@@ -102,6 +110,7 @@ footer .socialmedia a {
   text-decoration: none;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.1s ease-in-out;
 }
 footer .socialmedia a:hover {
   color: #FF7373;
