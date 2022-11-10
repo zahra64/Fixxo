@@ -28,6 +28,12 @@ a:hover {
 .mainmenu .logo {
   font-size: 35px;
   font-weight: 700;
+  color: #222529;
+  text-decoration: none;
+}
+.mainmenu .logo:hover {
+  color: #222529;
+  text-decoration: none;
 }
 .mainmenu .menu-links {
   font-weight: 500;

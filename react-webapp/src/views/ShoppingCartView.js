@@ -2,7 +2,7 @@ import React from 'react'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 
-const ContactsView = () => {
+const ShoppingCartView = () => {
   return (
     <>
     <MainMenuSection />
@@ -10,5 +10,4 @@ const ContactsView = () => {
     </>
   )
 }
-
-export default ContactsView
+export default ShoppingCartView
