@@ -70,7 +70,7 @@ a:hover {
   align-items: center;
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.06);
   position: relative;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .mainmenu .menu-icons .menu-icon:hover {
   color: #FFFFFF;
@@ -83,4 +83,27 @@ a:hover {
   background-color: #222529;
   text-decoration: none;
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.06);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  padding: 25px;
+}
+footer .socialmedia {
+  margin-bottom: 25px;
+}
+footer .socialmedia a {
+  font-size: 20px;
+  color: #222529;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer .socialmedia a:hover {
+  color: #FF7373;
+  text-decoration: none;
 }
