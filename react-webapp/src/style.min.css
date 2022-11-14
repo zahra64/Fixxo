@@ -28,7 +28,7 @@ a:hover {
 
 @media (min-width: 1600px) {
   .container {
-    max-width: var(--max-width);
+    max-width: 1680px;
   }
 }
 .mainmenu {
@@ -46,7 +46,7 @@ a:hover {
   text-decoration: none;
 }
 .mainmenu .logo:hover {
-  color: #222529;
+  color: #BBBBBB;
   text-decoration: none;
 }
 .mainmenu .menu-links {
@@ -101,6 +101,12 @@ a:hover {
   background-color: #222529;
   text-decoration: none;
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.06);
+}
+.mainmenu .menu-icons .btn-menu-icon {
+  color: #FFFFFF;
+  background-color: #222529;
+  border: none;
+  outline: none;
 }
 
 @media (min-width: 1200px) {
