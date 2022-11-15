@@ -1,21 +1,25 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import TempImg from '../assets/images/imges.jpg'
 
 const productCard = () => {
   return (
     <div className="col">
         <div className="card">
             <div className="card-img">
-                    <img src="assets/images/imges.jpg" alt="images" />
+            <img src={TempImg} alt="" />
+                    {/* <img src="assets/images/imges.jpg" alt="images" /> */}
                 <div className="card-menu">
-                    <a href="#"><i className="fa-regular fa-repeat"></i></a>
-                    <a href="#"><i className="fa-regular fa-heart"></i></a>
-                    <a href="#"><i className="fa-regular fa-bag-shopping"></i></a>
+                    <button className="menu-link"><i className="fa-regular fa-heart"></i></button>
+                    <button className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
+                    <button className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
+                    {/* <a href="#"><i className="fa-regular fa-repeat"></i></a> */}
                 </div>
-                <a className="_btn-theme btn-card-theme" href="#">
-                    <span className="_btn-theme-left"></span>
+                <NavLink to="/products" className="btn-theme btn-card-theme" >
+                    <span className="corner-left"></span>
                     QUICK VIEW
-                    <span className="_btn-theme-right"></span>
-                </a>
+                    <span className="corner-right"></span>
+                </NavLink>
             </div>
             <div className="card-body">
                 <p className="card-category">Category</p>

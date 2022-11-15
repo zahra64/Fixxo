@@ -31,6 +31,38 @@ a:hover {
     max-width: 1680px;
   }
 }
+.btn-theme {
+  position: relative;
+  text-align: center;
+  background-color: #FF7373;
+  color: #FFFFFF;
+  padding: 20px 50px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-theme .corner-left {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  left: 10px;
+  border-left: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+}
+.btn-theme .corner-right {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  bottom: 10px;
+  right: 10px;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.btn-theme:hover {
+  color: #FFFFFF !important;
+  background-color: #222529;
+  text-decoration: none;
+}
+
 .mainmenu {
   display: grid;
   padding-top: 10px;
@@ -130,16 +162,15 @@ a:hover {
 .product-grid {
   margin-bottom: 60px;
 }
-.product-grid .container {
-  max-width: 1110px;
-}
 .product-grid .card {
   border: none;
+  width: 255px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-grid .card img,
 .product-grid .card .card-img {
   height: 210px;
-  width: 255px;
   background-color: #F5F5F5;
   position: relative;
 }
@@ -163,6 +194,8 @@ a:hover {
   align-items: center;
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.06);
   position: relative;
+  border: none;
+  outline: none;
 }
 .product-grid .card img .card-menu .menu-link:hover,
 .product-grid .card .card-img .card-menu .menu-link:hover {
@@ -206,6 +239,11 @@ a:hover {
   display: flex;
 }
 
+@media (min-width: 1200px) {
+  .product-grid .container {
+    max-width: 1110px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
