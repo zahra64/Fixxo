@@ -243,10 +243,10 @@ a:hover {
   font-weight: 600;
 }
 .product-grid .card:hover .card-menu {
-  display: block;
+  display: block !important;
 }
 .product-grid .card:hover .btn-card-theme {
-  display: flex;
+  display: flex !important;
 }
 
 @media (min-width: 1200px) {

@@ -103,10 +103,10 @@
 
         &:hover {
             .card-menu {
-                display: block;
+                display: block !important;
             }
             .btn-card-theme {
-                display: flex;
+                display: flex !important;
             }
         }
     }
