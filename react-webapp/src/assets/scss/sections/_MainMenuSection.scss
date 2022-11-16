@@ -22,7 +22,8 @@
     }
     .menu-links {
         grid-area: menulinks;
-        display: grid;
+        // display: grid;
+        display: none;
         overflow: hidden;
         font-weight: 400;
         height: 100%;
