@@ -350,6 +350,15 @@ footer .socialmedia a:hover {
 .contact-form .formBtn {
   grid-column: 1/-1;
 }
+.contact-form .error {
+  color: #FF7373;
+  border: 1px solid #FF7373;
+}
+.contact-form .errorMessage {
+  margin-top: 5px;
+  color: #FF7373;
+  font-size: 0.8em;
+}
 
 @media (min-width: 768px) {
   .contact-form form {

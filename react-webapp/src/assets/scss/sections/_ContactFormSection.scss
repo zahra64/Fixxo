@@ -39,6 +39,17 @@
         .formBtn {
             grid-column: 1 /-1;
         }
+
+        .error {
+            color: $color-theme;
+            border: 1px solid $color-theme;
+        }
+
+        .errorMessage {
+            margin-top: 5px;
+            color: $color-theme;
+            font-size: 0.8em;
+        }
     
 }
 @media(min-width:768px) {
