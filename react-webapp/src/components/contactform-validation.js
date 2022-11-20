@@ -1,3 +1,45 @@
+export const submitData = async (url, method, data, contentType = 'application/json') => {
+
+    const res = await fetch(url, {
+        method: method ,
+        headers: {
+            'Content-Type': contentType
+        },
+    
+        body: data
+})
+    // console.log('fetch status: ' + res.status)
+
+    if (res.status === 200) 
+        return true
+    
+    return false 
+
+}
+
+// export const submitData = (url, method, data, contentType = 'application/json') => {
+
+//             fetch(url, {
+//                 method: method ,
+//                 headers: {
+//                     'Content-Type': contentType
+//                 },
+            
+//                 body: data
+//         })
+//         .then(res => {
+//             console.log('fetch status: ' + res.status)
+
+//             if (res.status === 200) {
+//                 return true
+//             }
+            
+//             return false 
+//         })
+// }
+
+
+
 export const validate = (e, form =null) => {
     if (e.type === 'submit') {
         const errors = {}
@@ -34,7 +76,7 @@ const validate_email = (value) => {
     if (!value)
         return 'An email address is required'
     else if (!regex_email.test(value))
-        return 'Must be a valid email (eg. name@domail.com)'
+        return 'Must be a valid email (eg. name@domain.com)'
     else
     return null
 }

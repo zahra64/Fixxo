@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {validate} from '../components/contactform-validation'
+import {submitData, validate} from '../components/contactform-validation'
 
 const ContactFormSection = () => {
 
@@ -12,31 +12,7 @@ const ContactFormSection = () => {
     const [submitted, setSubmitted] = useState(false)
     const [failedSubmit, setFailedSubmit] = useState(false)
 
-    // const validate  = (values) => {
-    //     const errors ={}
-    //     const regex_email = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        
-    //     if(!values.name)
-    //         errors.name = "You must entar a name"
 
-    //     if(!values.email)
-    //         errors.email = "You must entar a email"
-    //     else if(!regex_email.test(values.email))
-    //         errors.email = "You must enter a valid email address (eg. name@domail.com)"
-
-    //     if(!values.comment)
-    //         errors.comment = "You must entar a comment"
-    //     else if(values.comment.length < 5)
-    //         errors.comment = "Your comment must be longer than five characters"
-
-    //     if(Object.keys(errors).length === 0)
-    //         setSubmitted(true)
-    //     else
-    //         setSubmitted(false)
-
-
-    //     return errors;
-    // }
 
     const handleChange = (e) => {
         const {id, value} = e.target
@@ -56,7 +32,7 @@ const ContactFormSection = () => {
 
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         // setFormErrors(validate(contactForm))
         setFailedSubmit(false)
@@ -73,16 +49,11 @@ const ContactFormSection = () => {
             setComments('')
             setErrors({})
 
-            fetch('https://win22-webapi.azurewebsites.net/api/contactform', {
-                method: 'POST' ,
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-            
-                body: json
-        })
-        .then(res => {
-            if (res.status === 200) {
+            // let result = await submitData('https://win22-webapi.azurewebsites.net/api/contactform', 'POST', json, )
+            // console.log('await result: '+ result)
+            // if(true)
+
+            if(await submitData('https://win22-webapi.azurewebsites.net/api/contactform', 'POST', json, )) {
                 setSubmitted(true)
                 setFailedSubmit(false)
             }
@@ -90,13 +61,36 @@ const ContactFormSection = () => {
                 setSubmitted(false)
                 setFailedSubmit(true)
             }
-        })
-
         } else {
             setSubmitted(false)
         }
-
     }
+
+            
+        //     fetch('https://win22-webapi.azurewebsites.net/api/contactform', {
+        //         method: 'POST' ,
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+            
+        //         body: json
+        // })
+        // .then(res => {
+        //     if (res.status === 200) {
+        //         setSubmitted(true)
+        //         setFailedSubmit(false)
+        //     }
+        //     else {
+        //         setSubmitted(false)
+        //         setFailedSubmit(true)
+        //     }
+        // })
+
+    //     } else {
+    //         setSubmitted(false)
+    //     }
+
+    // }
 
 
 
