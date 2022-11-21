@@ -24,7 +24,8 @@ const productCard = ({item}) => {
             <div className="card">
                 <div className="card-img">
                 {/* <img src={TempImg} alt="" /> */}
-                    <img src={item.img} alt={item.name} />
+                    {/* <img src={item.img} alt={item.name} /> */}
+                    <img src={item.imageName} alt={item.name} />
                         {/* <img src="assets/images/imges.jpg" alt="images" /> */}
                     <div className="card-menu d-xl-none">
                         <button onClick={addToWishList} className="menu-link"><i className="fa-regular fa-heart"></i></button>
