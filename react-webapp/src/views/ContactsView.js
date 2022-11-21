@@ -15,7 +15,7 @@ const ContactsView = () => {
     <BreadcrumbSection currentPage="Contacts" />
     <MapSection />
     <ContactFormSection />
-    {/* <FooterSection /> */}
+    <FooterSection />
     </>
   )
 }

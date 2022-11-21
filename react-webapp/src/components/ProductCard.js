@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import TempImg from '../assets/images/imges.jpg'
 
-const productCard = ({product}) => {
+const productCard = ({item}) => {
 
 
     const addToWishList = (e) => {
@@ -24,7 +24,7 @@ const productCard = ({product}) => {
             <div className="card">
                 <div className="card-img">
                 {/* <img src={TempImg} alt="" /> */}
-                    <img src={product.img} alt={product.name} />
+                    <img src={item.img} alt={item.name} />
                         {/* <img src="assets/images/imges.jpg" alt="images" /> */}
                     <div className="card-menu d-xl-none">
                         <button onClick={addToWishList} className="menu-link"><i className="fa-regular fa-heart"></i></button>
@@ -32,7 +32,7 @@ const productCard = ({product}) => {
                         <button onClick={addToCart} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
                         {/* <a href="#"><i className="fa-regular fa-repeat"></i></a> */}
                     </div>
-                    <NavLink to={`/products/${product.name.toLowerCase().replace(/ /gi, "-")}`}  className="btn-theme btn-card-theme d-xl-none" >
+                    <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`}  className="btn-theme btn-card-theme d-xl-none" >
                         <span className="corner-left"></span>
                         QUICK VIEW
                         <span className="corner-right"></span>
@@ -41,8 +41,8 @@ const productCard = ({product}) => {
                 <div className="card-body">
                     {/* <p className="card-category">Category</p> */}
                     {/* <h5 className="card-title">Modern Black Blouse</h5> */}
-                    <p className="card-category">{product.category}</p> 
-                    <h5 className="card-title">{product.name}</h5>  
+                    <p className="card-category">{item.category}</p> 
+                    <h5 className="card-title">{item.name}</h5>  
                     <p className="card-rating">
                         <i className="fa-sharp fa-solid fa-star"></i>
                         <i className="fa-sharp fa-solid fa-star"></i>
@@ -50,7 +50,7 @@ const productCard = ({product}) => {
                         <i className="fa-sharp fa-solid fa-star"></i>
                         <i className="fa-sharp fa-solid fa-star"></i>
                     </p>
-                    <p className="card-price">{product.price}</p>  
+                    <p className="card-price">{item.price}</p>  
                 </div>
             </div>
         </div>
