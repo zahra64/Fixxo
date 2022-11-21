@@ -4,12 +4,15 @@ import MainMenuSection from '../sections/MainMenuSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
 
-const ProductsView = ({items = []}) => {
+//without createContext must be written as below
+// const ProductsView = ({items = []}) => {  
+// <ProductGridSection title="Products" items={items} />
+  const ProductsView = () => { 
   return (
     <>
     <MainMenuSection />
     <BreadcrumbSection currentPage="Products" />
-    <ProductGridSection title="Products" items={items} />
+    <ProductGridSection title="Products" />
     <FooterSection />
     </>
   )
