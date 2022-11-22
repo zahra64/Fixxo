@@ -16,25 +16,25 @@ import { ProductContext} from './contexts/contexts'
 
 
 function App() {
-
-  // const [featuredProducts, setFeaturedProducts] = useState([
-  const [products, setProducts] = useState([])
-
-    useEffect (() =>{
-      const fetchData = async () => {
-        let result = await fetch ('https://win22-webapi.azurewebsites.net/api/products')
-        setProducts(await result.json())
-      }
-      fetchData()
-    }, [setProducts])
-
-
-    // {id:1, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/1600833/pexels-photo-1600833.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"},
-    // {id:2, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/1187952/pexels-photo-1187952.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"},
-    // {id:3, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/11465211/pexels-photo-11465211.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"},
-    // {id:4, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/3755022/pexels-photo-3755022.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"}
-
+  const [products, setProducts] = useState({
+    all: [],
+    featuredProducts: []
+  })
   
+    useEffect (() => {
+      const fetchAllProducts = async () => {
+        let result = await fetch ('https://win22-webapi.azurewebsites.net/api/products')
+        setProducts({...products, all: await result.json()})
+      }
+      fetchAllProducts()
+
+      const fetchFeaturedProducts = async () => {
+        let result = await fetch ('https://win22-webapi.azurewebsites.net/api/products?take=8')
+        setProducts({...products, featuredProducts: await result.json()})
+      }
+      fetchFeaturedProducts()
+
+    }, [setProducts])
 
 
 
@@ -82,3 +82,23 @@ export default App;
 //    </BrowserRouter>
 // );
 // }
+
+
+// const [featuredProducts, setFeaturedProducts] = useState([
+ /*to get all products from API
+ 
+ const [products, setProducts] = useState([])
+
+    useEffect (() =>{
+      const fetchData = async () => {
+        let result = await fetch ('https://win22-webapi.azurewebsites.net/api/products')
+        setProducts(await result.json())
+      }
+      fetchData()
+    }, [setProducts])
+*/
+
+    // {id:1, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/1600833/pexels-photo-1600833.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"},
+    // {id:2, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/1187952/pexels-photo-1187952.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"},
+    // {id:3, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/11465211/pexels-photo-11465211.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"},
+    // {id:4, name:"Modern Black Blouse", category: "Fashion", price :"$35.00", rating: 5, img:"https://images.pexels.com/photos/3755022/pexels-photo-3755022.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"}
