@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
+import ShowcaseSection from '../sections/ShowcaseSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import { ProductContext } from '../contexts/contexts'
 
@@ -20,6 +21,7 @@ import { ProductContext } from '../contexts/contexts'
     <>
       <header>
         <MainMenuSection />
+        <ShowcaseSection />
       </header>
 
       <ProductGridSection title="Featured Products" items={productContext.featuredProducts}/>
