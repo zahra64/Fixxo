@@ -310,6 +310,13 @@ a:hover {
     max-width: 1110px;
   }
 }
+._banners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
