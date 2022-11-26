@@ -5,6 +5,7 @@ import ShowcaseSection from '../sections/ShowcaseSection'
 import BannersSection from '../sections/BannersSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import { ProductContext } from '../contexts/contexts'
+import FlashSaleSection from '../sections/FlashSaleSection'
 
 
 
@@ -29,6 +30,9 @@ import { ProductContext } from '../contexts/contexts'
       {/* <ProductGridSection title="Featured Products" products={featuredProducts} /> */}
       {/* <ProductGridSection title="Top Products" products={topProducts} /> */}
       <BannersSection />
+      <FlashSaleSection  items={productContext.saleProducts}/>
+      
+     
   
 
       <FooterSection />
