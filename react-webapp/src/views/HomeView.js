@@ -8,8 +8,6 @@ import { ProductContext } from '../contexts/contexts'
 import FlashSaleSection from '../sections/FlashSaleSection'
 import CustomerSupportSection from '../sections/CustomerSupportSection'
 
-
-
 //without createContext must be written as below:
 // import React, {useState} from 'react'
 //  const HomeView = ({items= []}) => { 

@@ -42,7 +42,7 @@ const validate_name = (value) => {
     if (!value)
         return 'A name is required'
     else if (value.length < 2)
-        return 'Must be a valid name'
+        return 'It must be a valid name, at least 2 character long '
     else
     return null
 }

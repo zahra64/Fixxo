@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import MenuIcon from '../components/MenuIcon'
-// import LinearGradient from 'react-native-linear-gradient';
+
 
 const MainMenuSection = () => {
   const [showMenu, setShowMenu] = useState(false)
