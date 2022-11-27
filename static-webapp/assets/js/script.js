@@ -22,7 +22,7 @@ const checkEmail = (element, message) => {
         document.getElementById(element.target.id).classList.add('error')
         document.getElementById(`${element.target.id}ErrorMessage`).innerHTML = message
     } else {
-        cument.getElementById(element.target.id).classList.remove('error')
+        document.getElementById(element.target.id).classList.remove('error')
         document.getElementById(`${element.target.id}ErrorMessage`).innerText =""
     }
 }
