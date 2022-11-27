@@ -109,11 +109,6 @@ a:hover {
   border-top: 1px solid #FFFFFF;
 }
 
-.gradient-gray {
-  background: #E6E6E6;
-  background: linear-gradient(90deg, #E6E6E6 0%, #F5F5F5 100%);
-}
-
 .mainmenu {
   display: grid;
   padding-top: 10px;
@@ -215,6 +210,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
+  background-color: #EDEDED;
 }
 .showcase .showcase-image-left {
   margin-left: 0px;

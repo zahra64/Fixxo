@@ -22,7 +22,7 @@ import CustomerSupportSection from '../sections/CustomerSupportSection'
   
   return (
     <>
-      <header>
+      <header className="gradient-gray">
         <MainMenuSection />
         <ShowcaseSection />
       </header>
@@ -32,9 +32,6 @@ import CustomerSupportSection from '../sections/CustomerSupportSection'
       {/* <ProductGridSection title="Top Products" products={topProducts} /> */}
       <BannersSection />
       <FlashSaleSection  items={productContext.saleProducts}/>
-      
-     
-  
       <CustomerSupportSection />
       <FooterSection />
     </>

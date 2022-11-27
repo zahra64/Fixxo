@@ -1,3 +1,9 @@
+.gradient-gray {
+    // background-color: $color-backgroundgray;
+    background: $linear-gradient-dark;
+    background: linear-gradient(90deg, ($linear-gradient-dark) 0%, ($linear-gradient-light) 100%);
+}
+
 .mainmenu {
     display: grid;
     padding-top: 10px;
