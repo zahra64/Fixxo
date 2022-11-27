@@ -83,8 +83,8 @@ a:hover {
   width: 20px;
   top: 10px;
   left: 10px;
-  border-left: 1px solid #222529;
-  border-top: 1px solid #222529;
+  border-left: 2px solid #222529;
+  border-top: 2px solid #222529;
 }
 .btn-sale .corner-right {
   position: absolute;
@@ -92,8 +92,8 @@ a:hover {
   width: 20px;
   bottom: 10px;
   right: 10px;
-  border-right: 1px solid #222529;
-  border-bottom: 1px solid #222529;
+  border-right: 2px solid #222529;
+  border-bottom: 2px solid #222529;
 }
 .btn-sale:hover {
   color: #FFFFFF !important;

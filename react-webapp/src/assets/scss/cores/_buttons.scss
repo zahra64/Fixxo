@@ -53,8 +53,8 @@
         width: 20px;
         top: 10px;
         left: 10px;
-        border-left: 1px solid $color-dark;
-        border-top: 1px solid $color-dark;
+        border-left: 2px solid $color-dark;
+        border-top: 2px solid $color-dark;
     }
 
     .corner-right {
@@ -63,8 +63,8 @@
         width: 20px;
         bottom: 10px;
         right: 10px;
-        border-right: 1px solid $color-dark;
-        border-bottom: 1px solid $color-dark;
+        border-right: 2px solid $color-dark;
+        border-bottom: 2px solid $color-dark;
     }
 
     &:hover {
