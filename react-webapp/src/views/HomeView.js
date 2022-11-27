@@ -6,6 +6,7 @@ import BannersSection from '../sections/BannersSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import { ProductContext } from '../contexts/contexts'
 import FlashSaleSection from '../sections/FlashSaleSection'
+import CustomerSupportSection from '../sections/CustomerSupportSection'
 
 
 
@@ -34,7 +35,7 @@ import FlashSaleSection from '../sections/FlashSaleSection'
       
      
   
-
+      <CustomerSupportSection />
       <FooterSection />
     </>
   )
