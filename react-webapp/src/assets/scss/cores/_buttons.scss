@@ -34,3 +34,43 @@
         text-decoration: none;
     }
 }
+
+
+/****************************************/
+.btn-sale {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: $color-dark;
+    background-color: $color-white;
+    padding: 20px 50px;
+    transition: all 0.2s ease-in-out;
+     border: none;
+
+    .corner-left {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+        border-left: 1px solid $color-dark;
+        border-top: 1px solid $color-dark;
+    }
+
+    .corner-right {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        bottom: 10px;
+        right: 10px;
+        border-right: 1px solid $color-dark;
+        border-bottom: 1px solid $color-dark;
+    }
+
+    // &:hover {
+    //     color: $color-white !important;
+    //     background-color: $color-dark;
+    //     text-decoration: none;
+    // }
+}
+

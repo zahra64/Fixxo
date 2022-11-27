@@ -66,6 +66,36 @@ a:hover {
   text-decoration: none;
 }
 
+/****************************************/
+.btn-sale {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #222529;
+  background-color: #FFFFFF;
+  padding: 20px 50px;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+.btn-sale .corner-left {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  left: 10px;
+  border-left: 1px solid #222529;
+  border-top: 1px solid #222529;
+}
+.btn-sale .corner-right {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  bottom: 10px;
+  right: 10px;
+  border-right: 1px solid #222529;
+  border-bottom: 1px solid #222529;
+}
+
 .mainmenu {
   display: grid;
   padding-top: 10px;
@@ -338,7 +368,6 @@ a:hover {
 }
 .flashsale .flashsale-box .flashsale-button {
   width: 24.5%;
-  background-color: #FF7373;
 }
 
 .this-product-grid {

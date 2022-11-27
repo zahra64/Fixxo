@@ -8,7 +8,7 @@ const FlashSaleSection = ({items = []}) => {
     <section className="flashsale container">
     <div className="flashsale-box">
         <h1 className="flashsale-title">2 FOR USD $29</h1>
-        <Link to="/products" className="flashsale-button  btn-theme">
+        <Link to="/products" className="flashsale-button  btn-sale">
             <span className="corner-left "></span>
             FLASE SALE
             <span className="corner-right"></span>
@@ -34,7 +34,7 @@ const FlashSaleSection = ({items = []}) => {
     </div>
     <div className="flashsale-box">
         <h1 className="flashsale-title">2 FOR USD $29</h1>
-        <Link to="/products" className="flashsale-button  btn-theme">
+        <Link to="/products" className="flashsale-button  btn-sale">
             <span className="corner-left "></span>
             FLASE SALE
             <span className="corner-right"></span>
