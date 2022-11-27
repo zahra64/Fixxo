@@ -95,6 +95,19 @@ a:hover {
   border-right: 1px solid #222529;
   border-bottom: 1px solid #222529;
 }
+.btn-sale:hover {
+  color: #FFFFFF !important;
+  background-color: #222529;
+  text-decoration: none;
+}
+.btn-sale:hover .corner-right {
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.btn-sale:hover .corner-left {
+  border-left: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+}
 
 .mainmenu {
   display: grid;

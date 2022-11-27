@@ -67,10 +67,21 @@
         border-bottom: 1px solid $color-dark;
     }
 
-    // &:hover {
-    //     color: $color-white !important;
-    //     background-color: $color-dark;
-    //     text-decoration: none;
-    // }
+    &:hover {
+        color: $color-white !important;
+        background-color: $color-dark;
+        text-decoration: none;
+
+        .corner-right {
+            border-right: 1px solid $color-white;
+            border-bottom: 1px solid $color-white;
+        }
+
+        .corner-left {
+            border-left: 1px solid $color-white;
+            border-top: 1px solid $color-white;
+        }
+
+    }
 }
 
